@@ -9,7 +9,7 @@ tsdir=${cdir}/ts
 #前回のファイルが残っているかも知れないので、念のため削除
 rm -f ${tsdir}/*.ts
 
-for channel in `seq 1 300`
+for channel in {1..300}
 do
 echo ${channel}
 /usr/local/bin/recpt1 --strip --b25 ${channel} 30 ${tsdir}/${channel}.ts
