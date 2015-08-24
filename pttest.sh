@@ -12,5 +12,5 @@ rm -f ${tsdir}/*.ts
 for channel in {1..300}
 do
 echo ${channel}
-/usr/local/bin/recpt1 --strip --b25 ${channel} 30 ${tsdir}/${channel}.ts
+/usr/local/bin/recdvb --strip --b25 ${channel} 30 ${tsdir}/${channel}.ts
 done
