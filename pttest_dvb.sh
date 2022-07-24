@@ -22,7 +22,7 @@ echo ''
 echo "************************************************************************************************"
 echo time     = `date +%Y%m%d%H%M%S`
 echo  channel =  ${channel}
-/usr/local/bin/recpt1 --strip --b25 ${channel} ${duration} ${tsdir}/${channel}.ts
+/usr/local/bin/recdvb --strip --b25 ${channel} ${duration} ${tsdir}/${channel}.ts
 echo "************************************************************************************************"
 echo ''
 done
